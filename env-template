@@ -1,0 +1,25 @@
+# API Keys
+NEWSAPI_KEY=your_newsapi_key_here
+OPENAI_API_KEY=your_openai_api_key_here
+
+# Model Configuration
+BASELINE_MODEL=facebook/bart-large-cnn
+FINETUNED_PATH=models/finetuned
+
+# Training Configuration
+BATCH_SIZE=8
+LEARNING_RATE=5e-5
+WEIGHT_DECAY=0.01
+NUM_EPOCHS=3
+MAX_INPUT_LENGTH=512
+MAX_TARGET_LENGTH=128
+
+# LoRA Configuration
+LORA_R=16
+LORA_ALPHA=32
+LORA_DROPOUT=0.05
+
+# Data Configuration
+TRAIN_RATIO=0.8
+VAL_RATIO=0.1
+TEST_RATIO=0.1 

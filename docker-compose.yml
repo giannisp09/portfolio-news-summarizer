@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  news-summarizer:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+      # Add your API keys here if needed (llm-as-a-judge, etc.)
+      # - OPENAI_API_KEY=your_openai_api_key  
