@@ -25,7 +25,6 @@ DEFAULT_BASELINE_MODEL = os.getenv("BASELINE_MODEL", "facebook/bart-large-cnn")
 DEFAULT_FINETUNED_PATH = os.getenv("FINETUNED_PATH", str(MODELS_DIR / "finetuned"))
 
 # API keys
-NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Default parameters
