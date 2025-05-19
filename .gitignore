@@ -103,7 +103,6 @@ data/*.json
 data/*.csv
 !data/.gitkeep
 
-
 # model checkpoints
 models/
 *.pt
@@ -133,6 +132,77 @@ data/*
 reward_models/*
 
 results/*
+
+# Large model files
+reward_models/**/*.safetensors
+reward_models/**/*.bin
+reward_models/**/*.pt
+reward_models/**/*.pth
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+
+# Data files
+data/**/*.json
+data/**/*.csv
+data/**/*.xlsx
+
+# Results and logs
+results/**/*
+wandb/**/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 
 
