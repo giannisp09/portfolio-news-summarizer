@@ -130,7 +130,7 @@ data/*
 # Ignore all files in the models directory
 #models/*
 
-#reward_models/*
+reward_models/*
 
 results/*
 
