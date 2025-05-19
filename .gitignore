@@ -128,9 +128,9 @@ models/
 data/*
 
 # Ignore all files in the models directory
-models/*
+#models/*
 
-reward_models/*
+#reward_models/*
 
 results/*
 

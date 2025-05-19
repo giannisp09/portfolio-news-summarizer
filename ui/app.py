@@ -35,7 +35,7 @@ from src.inference.inference import setup_baseline_model, setup_finetuned_model
 
 # Constants
 DEFAULT_BASELINE_MODEL = "facebook/bart-large-cnn"
-DEFAULT_FINETUNED_PATH = "models/finetuned/xsum-25000"
+DEFAULT_FINETUNED_PATH = "models/finetuned/yfinance-md"
 DATA_DIR = Path(parent_dir) / "data"
 
 
@@ -47,8 +47,8 @@ def load_articles() -> List[Dict[str, Any]]:
         List of article dictionaries
     """
     all_articles = []
-    data_files = list(DATA_DIR.glob('*_comparison.json')) + list(DATA_DIR.glob('*_articles_*.json'))
-    
+    #data_files = list(DATA_DIR.glob('*_comparison.json')) + list(DATA_DIR.glob('*_articles_*.json'))
+    data_files = list(DATA_DIR.glob('*eval_yfinance.json'))
     for file_path in data_files:
         try:
             with open(file_path, 'r') as f:
