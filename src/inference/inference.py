@@ -28,7 +28,7 @@ DATA_DIR.mkdir(exist_ok=True)
 
 # Default models
 DEFAULT_BASELINE_MODEL = "facebook/bart-large-cnn"
-DEFAULT_FINETUNED_PATH = "models/finetuned"
+DEFAULT_FINETUNED_PATH = "models/finetuned/yfinance-md"
 
 
 def load_articles(input_file: str, limit: Optional[int] = None) -> List[Dict[str, Any]]:

@@ -1,0 +1,31 @@
+version: 1.0
+runtime: python3
+build:
+  commands:
+    pre-build:
+      - echo "Installing system dependencies..."
+      - apt-get update
+      - apt-get install -y build-essential curl git
+    build:
+      - echo "Installing Python dependencies..."
+      - make setup
+    post-build:
+      - echo "Build completed successfully"
+  env:
+    - name: PYTHONPATH
+      value: /app
+run:
+  runtime-version: 3.9
+  command: streamlit run ui/app.py --server.address=0.0.0.0 --server.port=8080
+  network:
+    port: 8080
+    env: APP_PORT
+  env:
+    - name: PYTHONUNBUFFERED
+      value: "1"
+    # Optional environment variables
+    - name: OPENAI_API_KEY
+      value: ${OPENAI_API _KEY}
+  secrets:
+    - name: OPENAI_API_KEY
+      value-from: arn:aws:secretsmanager:region:account-id:secret:OPENAI_API_KEY

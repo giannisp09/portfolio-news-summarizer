@@ -99,9 +99,10 @@ venv.bak/
 .mypy_cache/
 
 # data files
+!data/.gitkeep
 data/*.json
 data/*.csv
-!data/.gitkeep
+
 
 # model checkpoints
 models/
@@ -123,8 +124,6 @@ models/
 .env.*.local 
 .env
 
-# Ignore all files in the data directory
-data/*
 
 # Ignore all files in the models directory
 #models/*
@@ -144,9 +143,9 @@ reward_models/**/*.pth
 # models/**/*.pth
 
 # Data files
-data/**/*.json
-data/**/*.csv
-data/**/*.xlsx
+# data/**/*.json
+# data/**/*.csv
+# data/**/*.xlsx
 
 # Results and logs
 results/**/*

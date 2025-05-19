@@ -192,7 +192,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - [Hugging Face Transformers](https://huggingface.co/transformers/)
 - [Streamlit](https://streamlit.io/)
-- [NewsAPI](https://newsapi.org/)
 - [Yahoo Finance](https://finance.yahoo.com/)
 
 ## Causal Language Models for Summarization
