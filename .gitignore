@@ -138,10 +138,10 @@ reward_models/**/*.safetensors
 reward_models/**/*.bin
 reward_models/**/*.pt
 reward_models/**/*.pth
-models/**/*.safetensors
-models/**/*.bin
-models/**/*.pt
-models/**/*.pth
+# models/**/*.safetensors
+# models/**/*.bin
+# models/**/*.pt
+# models/**/*.pth
 
 # Data files
 data/**/*.json
